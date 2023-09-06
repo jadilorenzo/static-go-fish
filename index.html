@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en" data-theme-mode="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="stylesheet" href="/style.scss" />
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+
+<body class="app-with-sidebar">
+  <nav class="sidebar sidebar--padded">
+    <a class="sidebar__brand" href="/">
+      <img src="/public/Go Fish.png">
+    </a>
+
+    <div class="sidebar__content sidebar__content--start">
+      <button class="btn btn--no-border">
+        <span class="material-symbols-outlined icon--filled">playing_cards</span>
+        Games
+      </button>
+      <button class="btn btn--no-border">
+        <span class="material-symbols-outlined icon--filled">monitoring</span>
+        Stats
+      </button>
+      <div class="divider divider--spacing-medium"></div>
+      <button class="btn btn--no-border btn--active">
+        <span class="material-symbols-outlined">playing_cards</span>
+        Game 1
+      </button>
+    </div>
+
+
+
+    <div class="sidebar__content sidebar__content--end">
+      <div class="divider divider--spacing-medium"></div>
+      <button class="btn btn--no-border">
+        <span class="material-symbols-outlined icon--filled">settings</span>
+        Settings
+      </button>
+      <button class="btn btn--no-border">
+        <span class="material-symbols-outlined icon--filled">logout</span>
+        Logout
+      </button>
+    </div>
+  </nav>
+
+  <div class="app-body">
+    <div class="app__content">
+      <div class="app__inner-content">
+
+        <div class="three-fifths-width">
+
+          <h2>Players</h2>
+
+          <div class="card opponent-list">
+            <details class="accordion">
+              <summary class="opponent_list__summary">
+                <div class="accordion__label ">
+                  <h4>Player 1 <i>(you)</i> <i>(your turn)</i></h4>
+                  <div class="opponent-list__opponent-information">
+                    <div>Cards: 12</div>
+                    <div>Books: 1</div>
+                  </div>
+                </div>
+              </summary>
+            </details>
+
+            <div class="divider"></div>
+
+            <details class="accordion accordion--disabled" disabled>
+              <summary class="opponent_list__summary">
+                <div class="accordion__label ">
+                  <h4>Player 2</h4>
+                  <div class="opponent-list__opponent-information">
+                    <div>Cards: 7</div>
+                    <div>Books: 2</div>
+                  </div>
+                </div>
+                <div class="material-symbols-outlined accordion__marker">chevron_right</div>
+              </summary>
+              <div class="divider"></div>
+
+              <div class="opponent-list__details">
+                <div class="hand hand--small">
+                  <img src="/public/svg-cards/back_of_playcard.png" class="playing-card">
+                  <img src="/public/svg-cards/back_of_playcard.png" class="playing-card">
+                  <img src="/public/svg-cards/back_of_playcard.png" class="playing-card">
+                  <img src="/public/svg-cards/back_of_playcard.png" class="playing-card">
+                  <img src="/public/svg-cards/back_of_playcard.png" class="playing-card">
+                  <img src="/public/svg-cards/back_of_playcard.png" class="playing-card">
+                  <img src="/public/svg-cards/back_of_playcard.png" class="playing-card">
+                </div>
+                <div class="books">
+                  <img src="/public/svg-cards/5_of_spades.svg" class="playing-card">
+                  <img src="/public/svg-cards/2_of_diamonds.svg" class="playing-card">
+                </div>
+              </div>
+            </details>
+          </div>
+
+        </div>
+
+        <div class="two-fifths-width game-feed">
+          <h2>Game Feed</h2>
+          <div class="card">
+            <div class="card__body">
+              <ul>
+                <li>Blah blah blah blah blah blah</li>
+                <li>Blah blah blah</li>
+              </ul>
+            </div>
+            <div class="card__footer">
+              <div class="form-group">
+                <label for="chat-input" class="form-label">Send a Message</label>
+                <textarea name="chat-input" id="chat-input" class="form-control"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="app__footer">
+      <div class="hand">
+        <img src="/public/svg-cards/jack_of_clubs.svg" class="playing-card">
+        <img src="/public/svg-cards/jack_of_diamonds.svg" class="playing-card">
+        <img src="/public/svg-cards/jack_of_hearts.svg" class="playing-card">
+        <img src="/public/svg-cards/ace_of_spades.svg" class="playing-card">
+        <img src="/public/svg-cards/ace_of_diamonds.svg" class="playing-card">
+        <img src="/public/svg-cards/ace_of_hearts.svg" class="playing-card">
+        <img src="/public/svg-cards/king_of_clubs.svg" class="playing-card">
+        <img src="/public/svg-cards/king_of_diamonds.svg" class="playing-card">
+        <img src="/public/svg-cards/king_of_hearts.svg" class="playing-card">
+        <img src="/public/svg-cards/queen_of_clubs.svg" class="playing-card">
+        <img src="/public/svg-cards/queen_of_diamonds.svg" class="playing-card">
+        <img src="/public/svg-cards/queen_of_hearts.svg" class="playing-card">
+      </div>
+      <div class="flex-grow"></div>
+      <div class="books">
+        <img src="/public/svg-cards/7_of_spades.svg" class="playing-card">
+      </div>
+    </div>
+  </div>
+</body>
+
+
+</html>
